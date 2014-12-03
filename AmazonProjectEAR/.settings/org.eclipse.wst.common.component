@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="AmazonProjectEAR">
+        <wb-resource deploy-path="/" source-path="/EarContent" tag="defaultRootSource"/>
+        <dependent-module archiveName="AmazonProjectPanier.jar" deploy-path="/" handle="module:/resource/AmazonProjectPanier/AmazonProjectPanier">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="AmazonProjectPersist.jar" deploy-path="/lib" handle="module:/resource/AmazonProjectPersist/AmazonProjectPersist">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="AmazonProjectUtilisateur.jar" deploy-path="/" handle="module:/resource/AmazonProjectUtilisateur/AmazonProjectUtilisateur">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="AmazonProjectSite.war" deploy-path="/" handle="module:/resource/AmazonProjectSite/AmazonProjectSite">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="AmazonProjectAuthentification.jar" deploy-path="/" handle="module:/resource/AmazonProjectAuthentification/AmazonProjectAuthentification">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="AmazonProjectProduit.jar" deploy-path="/" handle="module:/resource/AmazonProjectProduit/AmazonProjectProduit">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+    </wb-module>
+</project-modules>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="AmazonProjectProduit">
+        <wb-resource deploy-path="/" source-path="/ejbModule" tag="defaultRootSource"/>
+        <property name="java-output-path" value="/AmazonProjectProduit/build/classes"/>
+        <property name="ClientProject" value="AmazonProjectProduitClient"/>
+        <property name="ClientJARURI" value="AmazonProjectProduitClient.jar"/>
+    </wb-module>
+</project-modules>
