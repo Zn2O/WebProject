@@ -1,6 +1,7 @@
 package com.servlet;
 
-import interf.ComposantPanierRemote;
+import interf.ComposantProduitRemote;
+
 import java.io.IOException;
 
 import javax.ejb.EJB;
@@ -19,7 +20,7 @@ import comp.Produit;
 public class AjoutProduitServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	@EJB 
-	ComposantPanierRemote produit;
+	ComposantProduitRemote produit;
 
     public AjoutProduitServlet() {
         super();
@@ -33,21 +34,21 @@ public class AjoutProduitServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String Nom =request.getParameter("Nom");
 		String Quantite = request.getParameter("Quantite");
-		String Price = request.getParameter("Price");
+		String Prix = request.getParameter("Prix");
 		
-		if(!Nom.isEmpty() && !Quantite.isEmpty() && !Price.isEmpty())
+		if(!Nom.isEmpty() && !Quantite.isEmpty() && !Prix.isEmpty())
 		{
 			
 			Produit currentProd = new Produit();
 			currentProd.setNom(Nom);
 			currentProd.setQuantite(Quantite);
-			currentProd.setPrix(Price);
+			currentProd.setPrix(Prix);
 			
-			produit.ajouterProduit();
+			produit.NouveauProduit();
 
 			
 			request.getSession().setAttribute("produit", currentProd);
-			request.getRequestDispatcher("produit.jsp").forward(request, response);
+			request.getRequestDispatcher("index.jsp").forward(request, response);
 		}
 		else 
 		{

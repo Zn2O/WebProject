@@ -16,8 +16,8 @@
 		<div id="triangle"></div>
 		<h1>Log in</h1>
 		<form action="LoginServlet" method="post">
-			<input type="text"  id="Login" name="login" /> <input
-				type="password"  id="password" name="password" />
+			<input type="text"  id="Login" name="login" /> 
+			<input type="password"  id="password" name="password" />
 			<input type="submit" value="Log in" />
 		</form>
 	</div>
