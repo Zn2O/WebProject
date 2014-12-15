@@ -75,7 +75,7 @@
 				</div>
 			</div>
 		</div>
-		<div id="NouveauProduitForm">
+		<div id="NouveauProduitForm"action="CreateProduit" method="post">
 		<h1>Creer un produit</h1>
 				<form action="AjoutProduitServlet" method="post">
 			<table>
@@ -122,6 +122,8 @@
             <input name="Valider" type="submit" />
  
 </form>
+
+
 </div>
 </body>
 </html>
