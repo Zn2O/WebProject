@@ -16,7 +16,7 @@ import comp.Produit;
 /**
  * Servlet implementation class AjoutProduit
  */
-@WebServlet("/creerProduit")
+@WebServlet("/AjoutProduitServlet")
 public class AjoutProduitServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	@EJB 
