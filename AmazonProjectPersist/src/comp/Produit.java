@@ -1,8 +1,6 @@
 package comp;
 
 import static javax.persistence.GenerationType.IDENTITY;
-
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -20,16 +18,12 @@ public class Produit {
 
 	@Id
 	@GeneratedValue(strategy=IDENTITY)
-	@Column(name = "ID", nullable = false) 
 	Integer id;
 
-	@Column(name = "NOM",nullable = false)
 	private String Nom;
 
-	@Column(name = "QUANTITE",nullable = false)
 	private String Quantite;
 
-	@Column(name = "PRIX",nullable = false)
 	private String Prix;
 
 	public Produit(Integer id) {

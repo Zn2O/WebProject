@@ -2,6 +2,8 @@ package com;
 
 import interf.ComposantAuthentificationRemote;
 
+import javax.ejb.Remote;
+import javax.ejb.Stateful;
 import javax.faces.context.ExternalContext;
 import javax.faces.context.FacesContext;
 import javax.faces.event.PhaseEvent;
@@ -9,6 +11,8 @@ import javax.faces.event.PhaseId;
 import javax.faces.event.PhaseListener;
 
 @SuppressWarnings("serial")
+@Stateful
+@Remote(ComposantAuthentificationRemote.class)
 public class Authentication implements PhaseListener, ComposantAuthentificationRemote{
 
     private static final String UTILISATEUR_LOGIN_OUTCOME = "login";

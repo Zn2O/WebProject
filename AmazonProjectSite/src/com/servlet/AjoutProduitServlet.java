@@ -16,16 +16,11 @@ import comp.Produit;
 /**
  * Servlet implementation class AjoutProduit
  */
-@WebServlet("/AjoutProduit")
+@WebServlet("/creerProduit")
 public class AjoutProduitServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	@EJB 
 	ComposantProduitRemote produit;
-
-    public AjoutProduitServlet() {
-        super();
-        // TODO Auto-generated constructor stub
-    }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.sendRedirect("index.jsp");
@@ -49,6 +44,7 @@ public class AjoutProduitServlet extends HttpServlet {
 			
 			request.getSession().setAttribute("produit", currentProd);
 			request.getRequestDispatcher("index.jsp").forward(request, response);
+			
 		}
 		else 
 		{

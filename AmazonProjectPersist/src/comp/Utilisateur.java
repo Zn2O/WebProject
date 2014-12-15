@@ -1,6 +1,5 @@
 package comp;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -17,16 +16,11 @@ public class Utilisateur {
 
 	    @Id
 	    @GeneratedValue(strategy=IDENTITY)
-	    @Column(name = "ID", nullable = false) 
 	    Integer id;
-	    @Column(name = "PSEUDO", nullable = false)
 	    private String Pseudo;
-	    @Column(name = "MOTDEPASSE", nullable = false)
 	    private String MotDePasse;
 	    private String VerificationMotDePasse;
-	    @Column(name = "PRENOM", nullable = false)
 	    private String Prenom;
-	    @Column(name = "NOM", nullable = false)
 	    private String Nom;
 	    
 	    public Utilisateur() {

@@ -42,7 +42,7 @@
 					<li class="divider"></li>
 					<li><a href="connexion.jsp" class="nav4">Se connecter</a></li>
 					<li class="divider"></li>
-					<li><a href="panier.jsp" class="nav5">Panier</a></li>
+					<li><a href="NewFile.jsp" class="nav5">Panier</a></li>
 					<li class="divider"></li>
 					<li><a href="contact.html" class="nav6">contact</a></li>
 					<li class="divider"></li>

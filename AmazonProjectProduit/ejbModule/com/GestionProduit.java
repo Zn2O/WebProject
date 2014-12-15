@@ -6,6 +6,8 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import javax.annotation.Resource;
+import javax.ejb.Remote;
+import javax.ejb.Stateful;
 import javax.faces.application.FacesMessage;
 import javax.faces.context.FacesContext;
 import javax.persistence.EntityManager;
@@ -17,6 +19,8 @@ import javax.transaction.UserTransaction;
 import comp.Produit;
 
 @SuppressWarnings("serial")
+@Stateful
+@Remote(ComposantProduitRemote.class)
 public class GestionProduit extends HttpServlet implements ComposantProduitRemote{
 	
 	public static final String PRODUIT_SESSION_KEY = "produit";
