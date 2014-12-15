@@ -98,7 +98,30 @@
 			</table>
 			<input type="submit" id="CreateRecord" value="Ajouter Produit" />
 		</form>
+		 
+               <div> <table>   <tr>
+                        <td class="hidden"><c:out value="p.productId"/></td>
+
+                        <td><c:out value="p.Nom"/></td>
+                        <td><c:out value="p.Quantite"/></td>
+
+                        <td><c:out value="p.Prix"/></td>
+                    </tr>   
+                    </table>    
+                </div> 
 	</div>
+	 
+<form action="AjoutProduitServlet" method="post">
+ 
+            <label for="Nom">Nom : </label>
+            <input name="Nom" type="text" />
+            <label for="Prix">Prix : </label>
+            <input name="Prix" type="text" />
+            <label for="Quantite">nb : </label>
+            <input name="Quantite" type="text" />
+            <input name="Valider" type="submit" />
+ 
+</form>
 </div>
 </body>
 </html>
