@@ -27,7 +27,8 @@ public class AjoutProduitServlet extends HttpServlet {
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String Nom =request.getParameter("Nom");
+		System.out.println("Hello");
+		/*String Nom =request.getParameter("Nom");
 		String Quantite = request.getParameter("Quantite");
 		String Prix = request.getParameter("Prix");
 		
@@ -51,6 +52,6 @@ public class AjoutProduitServlet extends HttpServlet {
 			
 			response.sendRedirect("index.jsp");
 		}
+	}*/
 	}
-
 }

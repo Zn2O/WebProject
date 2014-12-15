@@ -28,9 +28,6 @@ public class GestionProduit extends HttpServlet implements ComposantProduitRemot
 	@PersistenceContext (unitName = "AmazonProjectPersist")
 	private EntityManager em;
 
-	@Resource 
-	private UserTransaction utx;
-
     private String Nom;    
     private String Quantite;
     private String Prix;
@@ -45,9 +42,9 @@ public class GestionProduit extends HttpServlet implements ComposantProduitRemot
 			nouveauProduit.setQuantite(Quantite);
 			nouveauProduit.setPrix(Prix);
 			try {
-				utx.begin();
+				//utx.begin();
 				em.persist(nouveauProduit);
-				utx.commit();
+				//utx.commit();
 				return "produit";
 			} catch (Exception e) {               
 				FacesMessage message = new FacesMessage(FacesMessage.SEVERITY_ERROR,
